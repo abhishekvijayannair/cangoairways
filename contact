@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Customer Service</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css2?family=Crimson+Pro' rel='stylesheet'>
+	<link href='../css/homebanner.css' rel='stylesheet'>
+	<link href='../css/index.css' rel='stylesheet'>
+	<link href='../css/navbar.css' rel='stylesheet'>
+	<style>
+		body, html {
+			height: 100%;
+			margin: 0;
+			font-family: 'Crimson Pro', serif;
+			background-color: #150941;
+		}
+
+		footer {
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #150941;
+			color: #f1f1f2;
+			text-align: center;
+		}
+
+		hr {
+			width:80%;
+			margin:0 auto;
+		}
+				
+		.core-color {
+			color: #f80040;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Use the header area for the website name or logo -->
+	<header class="hero-image">
+		<div class="hero-text">
+			<h1 style="font-size: 45px;">
+				<span class="core-color">CanGo</span> Airways
+			</h1>
+			<p>Travel safely with us</p>
+		</div>
+	</header>
+	<br>
+	
+	<!-- Use the nav area to add hyperlinks to other pages within the website -->
+	<nav class="nav-bar" id="nav-bar-id">
+		<a href="#home" class="active">Home</a>
+		<a href="#offers">Explore Offers</a>
+		<a href="#contact">Contact Us</a>
+		<a href="#about">About Us</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</nav>
+	<br>
+	
+	<!-- Use the main area to add contents within the website -->
+	<main>
+		<picture>
+			<img class="home-promotion" src="../images/home-promotion.png" alt="Home Promotion" width="1080" height="520">
+		</picture>
+	</main>
+	<br>
+	
+	<!-- Use the footer area to add webpage footer content -->
+	<footer>
+		<hr>
+		<p>&copy; Copyright 2021 <span class="core-color">CanGo</span> Airways. All rights reserved.</p>
+		<br>
+	</footer>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("nav-bar-id");
+		  if (x.className === "nav-bar") {
+			x.className += " responsive";
+		  } else {
+			x.className = "nav-bar";
+		  }
+		}
+	</script>
+</body>
+</html>
