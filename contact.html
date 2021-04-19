@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Customer Service</title>
+	<title>CanGo.com: Customer Service</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,23 +46,51 @@
 			</h1>
 			<p>Travel safely with us</p>
 		</div>
+		<section class ="heading">
+		<h1 style="font-size:60px; text-align: center; color:pink;"> How can we help?</h1>
+		</section>
 	</header>
 	<br>
 	
 	<!-- Use the nav area to add hyperlinks to other pages within the website -->
 	<nav class="nav-bar" id="nav-bar-id">
-		<a href="#home" class="active">Home</a>
-		<a href="#offers">Explore Offers</a>
-		<a href="#contact">Contact Us</a>
-		<a href="#about">About Us</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars"></i>
+		<!-- <a href="#home" class="active">Home</a> -->
+		<!-- <a href="#offers">Explore Offers</a> -->
+		<!-- <a href="#contact">Contact Us</a> -->
+		<!-- <a href="#about">About Us</a> -->
+		<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+			<!-- <i class="fa fa-bars"></i> -->
 		</a>
 	</nav>
 	<br>
 	
 	<!-- Use the main area to add contents within the website -->
 	<main>
+		<form action="/action_page.php">
+			<fieldset>
+			  <h2>Customer Service Help</h2>
+			  <label for="fname">Confirmation number:</label>
+			  <input type="text" id="fname" name="fname" placeholder="Confirmation" title="NYDH3"><br><br>
+			  <label for="lname">Last name:</label>
+			  <input type="text" id="lname" name="lname" placeholder="last name" title="Last Name"><br><br>
+			  <label for="email">Email:</label>
+			  <input type="email" id="email" name="email" placeholder="EMAIL" title="Your email"><br><br>
+			  <input type="submit" value="Check my booking">
+			</fieldset>
+		</form>
+		<br><br>
+		<details>
+		  <summary>Frequently asked questions</summary>
+			<ul>
+			 <li>Coronavirus-related support</li>
+			 <li>Cancellations</li>
+			 <li>Payments</li>
+			 <li>Booking details</li>
+			 <li>Pricing</li>
+			 <li>Referal rewards</li>
+			</ul>
+		</details>
+		
 		<picture>
 			<img class="home-promotion" src="../images/home-promotion.png" alt="Home Promotion" width="1080" height="520">
 		</picture>
