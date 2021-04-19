@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Book Flights | CanGo Airways</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css2?family=Crimson+Pro' rel='stylesheet'>
+	<link href='css/homebanner.css' rel='stylesheet'>
+	<link href='css/index.css' rel='stylesheet'>
+	<link href='css/navbar.css' rel='stylesheet'>
+	<style>
+		body, html {
+			height: 100%;
+			margin: 0;
+			font-family: 'Crimson Pro', serif;
+			background-color: #150941;
+		}
+
+		footer {
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #150941;
+			color: #f1f1f2;
+			text-align: center;
+		}
+
+		hr {
+			width:80%;
+			margin:0 auto;
+		}
+		
+		.core-color {
+			color: #f80040;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Use the header area for the website name or logo -->
+	<header class="hero-image">
+		<div class="hero-text">
+			<h1 style="font-size: 45px;">
+				<span class="core-color">CanGo</span> Airways
+			</h1>
+			<p>Travel safely with us</p>
+		</div>
+	</header>
+	
+	<!-- Use the nav area to add hyperlinks to other pages within the website -->
+	<nav class="nav-bar" id="nav-bar-id">
+		<a href="index.html" class="active">Home</a>
+		<a href="#offers">Explore Offers</a>
+		<a href="#contact">Contact Us</a>
+		<a href="#about">About Us</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</nav>
+	<br>
+	
+	<!-- Use the main area to add contents within the website -->
+	<main>
+		<section class="intro-section">
+			<p>Whether you are travelling for business or leisure, CanGo Airways can always help you book flights on your trip.
+			Start planning your journey with just a few clicks. When you book on <span style="color: #f2f2f2;">cangoairways.com</span>,
+			you will have the world right at your fingertips.</p>
+		</section>
+		
+		<section class="search-form">
+			<h3>Book Flight</h3>
+			<form action="#" autocomplete="off">
+				<label for="from-country">From</label>
+				<select id="from-country" name="from-country" required>
+					<option value="">Select Location</option>
+					<option value="australia">Australia</option>
+					<option value="canada">Canada</option>
+					<option value="dubai">Dubai</option>
+					<option value="india">India</option>
+					<option value="southafrica">South Africa</option>
+					<option value="uk">UK</option>
+					<option value="usa">USA</option>
+				</select>
+
+				<label for="to-country">To</label>
+				<select id="to-country" name="to-country" required>
+					<option value="">Select Location</option>
+					<option value="australia">Australia</option>
+					<option value="canada">Canada</option>
+					<option value="dubai">Dubai</option>
+					<option value="india">India</option>
+					<option value="southafrica">South Africa</option>
+					<option value="uk">UK</option>
+					<option value="usa">USA</option>
+				</select><br><br>
+
+				<label for="flight-date">Travel Date &nbsp;</label>
+				<input type="date" id="flight-date" name="flight-date" required><br><br>
+		
+				<label for="passenger-count">Passenger</label>
+				<input type="text" id="passenger-count" name="passenger-count" placeholder="Number of Passengers" required>
+		
+				<label for="cabin-type">Cabin</label>
+				<select id="cabin-type" name="cabin-type" required>
+					<option value="">Select Cabin Type</option>
+					<option value="economy">Economy</option>
+					<option value="premium">Premium</option>
+				</select>
+	  
+				<input type="submit" value="Show Flights">
+			</form>
+		</section>
+		<br>
+		<picture>
+			<img class="home-promotion" src="./images/home-promotion.png" alt="Home Promotion" width="1080" height="520">
+		</picture>
+	</main>
+	<br>
+	
+	<!-- Use the footer area to add webpage footer content -->
+	<footer>
+		<hr>
+		<p>&copy; Copyright 2021 <span class="core-color">CanGo</span> Airways. All rights reserved.</p>
+		<br>
+	</footer>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("nav-bar-id");
+		  if (x.className === "nav-bar") {
+			x.className += " responsive";
+		  } else {
+			x.className = "nav-bar";
+		  }
+		}
+	</script>
+</body>
+</html>
