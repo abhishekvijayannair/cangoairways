@@ -19,15 +19,19 @@
 			background-color: #150941;
 		}
 
-		@media screen and (min-width: 2048px) {
-			body {
-				font-size: 24px;
+		.heading-text {
+			font-size: 45px;
+		}
+
+		@media screen and (max-width: 550px) {
+			.heading-text {
+				font-size: 35px;
 			}
 		}
 
-		@media screen and (max-width: 400px) {
-			h1 {
-				font-size: 35px;
+		@media screen and (min-width: 2048px) {
+			body {
+				font-size: 24px;
 			}
 		}
 
@@ -68,7 +72,7 @@
 	<!-- Use the header area for the website name or logo -->
 	<header class="hero-image">
 		<div class="hero-text">
-			<h1 style="font-size: 45px;">
+			<h1 class="heading-text">
 				<span class="core-color">CanGo</span> Airways
 			</h1>
 			<p>Travel safely with us</p>

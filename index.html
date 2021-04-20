@@ -19,15 +19,19 @@
 			background-color: #150941;
 		}
 
-		@media screen and (min-width: 2048px) {
-			body {
-				font-size: 24px;
+		.heading-text {
+			font-size: 45px;
+		}
+
+		@media screen and (max-width: 550px) {
+			.heading-text {
+				font-size: 35px;
 			}
 		}
 
-		@media screen and (max-width: 400px) {
-			h1 {
-				font-size: 35px;
+		@media screen and (min-width: 2048px) {
+			body {
+				font-size: 24px;
 			}
 		}
 
@@ -58,7 +62,7 @@
 	<!-- Use the header area for the website name or logo -->
 	<header class="hero-image">
 		<div class="hero-text">
-			<h1 style="font-size: 45px;">
+			<h1 class="heading-text">
 				<span class="core-color">CanGo</span> Airways
 			</h1>
 			<p>Travel safely with us</p>
@@ -88,7 +92,7 @@
 
 		<section class="search-form">
 			<h3>Book Flight</h3>
-			<form action="#" autocomplete="off">
+			<form action="html/flight-info.html" autocomplete="off">
 				<label for="from-country">From</label>
 				<select id="from-country" name="from-country" required>
 					<option value="">Select Location</option>

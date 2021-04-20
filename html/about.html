@@ -20,17 +20,21 @@
       background-color: #150941;
     }
 
+    .heading-text {
+      font-size: 45px;
+    }
+
+    @media screen and (max-width: 550px) {
+      .heading-text {
+        font-size: 35px;
+      }
+    }
+
     @media screen and (min-width: 2048px) {
       body {
         font-size: 24px;
       }
     }
-
-    @media screen and (max-width: 400px) {
-			h1 {
-				font-size: 35px;
-			}
-		}
 
     footer {
       left: 0;
@@ -54,14 +58,14 @@
 
 <body>
   <!-- Use the header area for the website name or logo -->
-  <header class="hero-image">
-    <div class="hero-text">
-      <h1 style="font-size: 45px">
-        <span class="core-color">CanGo</span> Airways
-      </h1>
-      <p>Travel safely with us</p>
-    </div>
-  </header>
+	<header class="hero-image">
+		<div class="hero-text">
+			<h1 class="heading-text">
+				<span class="core-color">CanGo</span> Airways
+			</h1>
+			<p>Travel safely with us</p>
+		</div>
+	</header>
 
   <!-- Use the nav area to add hyperlinks to other pages within the website -->
   <nav class="nav-bar" id="nav-bar-id">
@@ -203,14 +207,14 @@
       <div>
         <article class="article-content">
           <h2 class="content-head-text">Why travel with us?</h2>
-            <ul class="article-list">
-              <li>Twenty-eight consecutive years of profitable operations.</li>
-              <li>Market share of 70% as of March 2021.</li>
-              <li>Cango Airways operates the furthest flight in the world.</li>
-              <li>Named as Aon’s Best Employer for the year 1999,2001,2002,2014 and 2018</li>
-              <li>A fleet of 699 aircraft, including 590 new generation A540 NEONs, 101 A333 CEOs, 21 ATRDs and 30 A321
-                NEODs.</li>
-            </ul>
+          <ul class="article-list">
+            <li>Twenty-eight consecutive years of profitable operations.</li>
+            <li>Market share of 70% as of March 2021.</li>
+            <li>Cango Airways operates the furthest flight in the world.</li>
+            <li>Named as Aon’s Best Employer for the year 1999,2001,2002,2014 and 2018</li>
+            <li>A fleet of 699 aircraft, including 590 new generation A540 NEONs, 101 A333 CEOs, 21 ATRDs and 30 A321
+              NEODs.</li>
+          </ul>
         </article>
         <aside class="image-container">
 
