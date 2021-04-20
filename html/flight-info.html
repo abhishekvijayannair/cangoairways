@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Book Flights | CanGo Airways</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css2?family=Crimson+Pro' rel='stylesheet'>
+	<link href='../css/homebanner.css' rel='stylesheet'>
+	<link href='../css/flight-info.css' rel='stylesheet'>
+	<link href='../css/navbar.css' rel='stylesheet'>
+	<style>
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+			font-family: 'Crimson Pro', serif;
+			background-color: #150941;
+		}
+
+		.heading-text {
+			font-size: 45px;
+		}
+
+		footer {
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #150941;
+			color: #f1f1f2;
+			text-align: center;
+		}
+
+		hr {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.core-color {
+			color: #f80040;
+		}
+
+		@media screen and (min-width: 2048px) {
+			body {
+				font-size: 24px;
+			}
+		}
+
+		@media screen and (max-width: 550px) {
+			.heading-text {
+				font-size: 35px;
+			}
+		}
+
+		@media (max-width: 1150px) {
+			.flex-container {
+				flex-direction: column;
+			}
+
+			.flex-item-left {
+				margin-right: 0px;
+			}
+
+			.flex-item-right {
+				margin-left: 0px;
+			}
+		}
+
+		@media (max-width: 1500px) {
+			.info-container {
+				height: 1000px;
+				overflow-y: auto;
+			}
+		}
+
+		@media (max-width: 550px) {
+			.card img {
+				width: 100%;
+			}
+
+			.container {
+				width: 100%;
+			}
+
+			.flex-item-left {
+				width: 75%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.flex-item-right {
+				width: 75%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Use the header area for the website name or logo -->
+	<header class="hero-image">
+		<div class="hero-text">
+			<h1 class="heading-text">
+				<span class="core-color">CanGo</span> Airways
+			</h1>
+			<p>Travel safely with us</p>
+		</div>
+	</header>
+
+	<!-- Use the nav area to add hyperlinks to other pages within the website -->
+	<nav class="nav-bar" id="nav-bar-id">
+		<a href="../index.html" class="active">Home</a>
+		<a href="#offers">Explore Offers</a>
+		<a href="#contact">Contact Us</a>
+		<a href="about.html">About Us</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</nav>
+	<br>
+
+	<!-- Use the main area to add contents within the website -->
+	<main>
+		<div class="intro-section">
+			<p>Leisure or business, travelling is always special. CanGo Airways can always help you book flights
+				on your trip. Start planning your journey with just a few clicks.
+				When you book on <span style="color: #f1f1f2;">cangoairways.com</span>,
+				you will have the world right at your fingertips.</p>
+		</div>
+
+		<section class="content-container">
+			<h2>Flight Information</h2>
+			<div class="info-container">
+				<div class="flex-container">
+					<div class="flex-item-left card-container">
+						<div class="card">
+							<img src="../images/cango-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 18:43</p>
+									<p>ARR: 03:04</p>
+									<p>
+										<span>COK</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-item-right  card-container">
+						<div class="card">
+							<img src="../images/xxx-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 06:00</p>
+									<p>ARR: 12:45</p>
+									<p>
+										<span>LLD</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>MCG</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="flex-item-left card-container">
+						<div class="card">
+							<img src="../images/abc-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 23:55</p>
+									<p>ARR: 01:00</p>
+									<p>
+										<span>LEH</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>UUD</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-item-right  card-container">
+						<div class="card">
+							<img src="../images/cango-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 09:00</p>
+									<p>ARR: 18:30</p>
+									<p>
+										<span>ASW</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>YYZ</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="flex-item-left card-container">
+						<div class="card">
+							<img src="../images/cango-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 18:45</p>
+									<p>ARR: 03:05</p>
+									<p>
+										<span>OPD</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-item-right  card-container">
+						<div class="card">
+							<img src="../images/xxx-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 18:43</p>
+									<p>ARR: 03:04</p>
+									<p>
+										<span>COK</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="flex-item-left card-container">
+						<div class="card">
+							<img src="../images/xyz-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 02:15</p>
+									<p>ARR: 05:30</p>
+									<p>
+										<span>COK</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>OOE</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-item-right  card-container">
+						<div class="card">
+							<img src="../images/xyz-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 17:40</p>
+									<p>ARR: 02:35</p>
+									<p>
+										<span>PPR</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="flex-item-left card-container">
+						<div class="card">
+							<img src="../images/cango-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 09:20</p>
+									<p>ARR: 23:35</p>
+									<p>
+										<span>COK</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-item-right  card-container">
+						<div class="card">
+							<img src="../images/cango-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 18:43</p>
+									<p>ARR: 03:04</p>
+									<p>
+										<span>COK</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="flex-item-left card-container">
+						<div class="card">
+							<img src="../images/xxx-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 05:49</p>
+									<p>ARR: 04:30</p>
+									<p>
+										<span>COK</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-item-right  card-container">
+						<div class="card">
+							<img src="../images/abc-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 01:00</p>
+									<p>ARR: 05:30</p>
+									<p>
+										<span>COK</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-container">
+					<div class="flex-item-left card-container">
+						<div class="card">
+							<img src="../images/cango-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 00:05</p>
+									<p>ARR: 23:10</p>
+									<p>
+										<span>COK</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-item-right  card-container">
+						<div class="card">
+							<img src="../images/cango-icon.png" alt="cango-icon">
+							<div class="container">
+								<div class="container-text">
+									<p>DEP: 10:30</p>
+									<p>ARR: 12:05</p>
+									<p>
+										<span>COK</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>
+											<i class="fa fa-plane" style="font-size:24px; color: #f80040;"></i>
+										</span>
+										<span>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+											<i class="fa fa-circle" style="font-size:4px; vertical-align: middle;"></i>
+										</span>
+										<span>DEH</span>
+									</p>
+									<div style="width: 100%; margin-bottom: 10px;">
+										<button class="button"><span>Proceed </span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<br>
+		<picture>
+			<img class="home-promotion" src="../images/home-promotion.png" alt="Home Promotion" width="1080"
+				height="520">
+		</picture>
+	</main>
+	<br>
+
+	<!-- Use the footer area to add webpage footer content -->
+	<footer>
+		<hr>
+		<p>&copy; Copyright 2021 <span class="core-color">CanGo</span> Airways. All rights reserved.</p>
+		<br>
+	</footer>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("nav-bar-id");
+			if (x.className === "nav-bar") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav-bar";
+			}
+		}
+	</script>
+</body>
+
+</html>

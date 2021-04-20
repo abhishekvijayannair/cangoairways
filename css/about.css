@@ -58,6 +58,10 @@
 	line-height: 1.5;
 }
 
+.article-list {
+	line-height: 1.5;
+}
+
 ul {
 	list-style: circle;
 	line-height: 150%
