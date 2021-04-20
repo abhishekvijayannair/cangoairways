@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Book Flights | CanGo Airways</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro" rel="stylesheet" />
+  <link href="../css/homebanner.css" rel="stylesheet" />
+  <link href="../css/about.css" rel="stylesheet" />
+  <link href="../css/navbar.css" rel="stylesheet" />
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: "Crimson Pro", serif;
+      background-color: #150941;
+    }
+
+    footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #150941;
+      color: #f1f1f2;
+      text-align: center;
+    }
+
+    hr {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .core-color {
+      color: #f80040;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Use the header area for the website name or logo -->
+  <header class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size: 45px">
+        <span class="core-color">CanGo</span> Airways
+      </h1>
+      <p>Travel safely with us</p>
+    </div>
+  </header>
+
+  <!-- Use the nav area to add hyperlinks to other pages within the website -->
+  <nav class="nav-bar" id="nav-bar-id">
+    <a href="../index.html">Home</a>
+    <a href="#offers">Explore Offers</a>
+    <a href="#contact">Contact Us</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+  <br />
+
+  <!-- Use the main area to add contents within the website -->
+  <main>
+    <section class="article-container">
+      <div>
+        <aside class="image-container">
+          <picture>
+            <img class="content-image" src="../images/welcome.png" alt="Welcome to Cango Airways" />
+          </picture>
+        </aside>
+        <article class="article-content">
+          <h2 class="content-head-text">Our Story</h2>
+          <p class="article-text">
+            Our home is in Canada, the land of multi-culture. Since 1993, we are
+            helping our passengers to reach their destinations all over the world.
+            Our robust network provides access to hundreds of destinations for our
+            customers to explore and experience. We believe in excelling services
+            provided by us throughout your journey with us, and it should not just
+            travel, it's a space for your privacy—our personalized offers and
+            experience, with options and choices every step of the way. We are very
+            proud to support charity initiatives and social communities around the world.
+          </p>
+        </article>
+      </div>
+      <div>
+        <article class="article-content">
+          <h2 class="content-head-text">Safety & Hygine</h2>
+          <p class="article-text">
+            Our Staffs are well experienced in several categories and trained to serve
+            each and every passenger in our flights. Our top priority is always AVIATION
+            SAFETY and CUSTOMER SAFETY because there are lives involved in every operation
+            of aircraft. We care about our mother earth and believe in the protection of
+            present and coming generations. We make sure to reduce the negative
+            environmental impact of our functioning and highly believe in becoming a
+            sustainable business solution in both the sky and on the ground. We have
+            already taken numerous measures in the past months to protect our guests
+            and employees in the current COVID-19 situation and are well prepared to
+            handle any scenarios.
+          </p>
+        </article>
+        <aside class="image-container">
+          <picture>
+            <img class="content-image" src="../images/heath-safety.png" alt="Welcome to Cango Airways" />
+          </picture>
+        </aside>
+      </div>
+      <div>
+        <article class="article-content">
+          <h2 class="content-head-text">Facts and Figures</h2>
+          <p class="article-text">
+          <ul>
+            <li>Twenty-eight consecutive years of profitable operations.</li>
+            <li>Market share of 70% as of March 2021.</li>
+            <li>Cango Airways operates the furthest flight in the world.</li>
+            <li>Named as Aon’s Best Employer for the year 1999,2001,2002,2014 and 2018</li>
+            <li>A fleet of 699 aircraft, including 590 new generation A540 NEONs, 101 A333 CEOs, 21 ATRDs and 30 A321
+              NEODs.</li>
+          </ul>
+          </p>
+        </article>
+        <aside class="image-container">
+
+        </aside>
+      </div>
+    </section>
+    <br />
+    <picture>
+      <img class="home-promotion" src="../images/home-promotion.png" alt="Home Promotion" width="1080" height="520" />
+    </picture>
+  </main>
+  <br />
+
+  <!-- Use the footer area to add webpage footer content -->
+  <footer>
+    <hr />
+    <p>
+      &copy; Copyright 2021 <span class="core-color">CanGo</span> Airways. All
+      rights reserved.
+    </p>
+    <br />
+  </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nav-bar-id");
+      if (x.className === "nav-bar") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav-bar";
+      }
+    }
+  </script>
+</body>
+
+</html>
