@@ -47,6 +47,24 @@ input[type=submit]:hover {
 	max-width: 1050px;
 }
 
+.alert {
+	background-color: #150941;
+	color: #f1f1f2;
+	padding: 10px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alert a {
+	color: #f1f1f2;
+}
+
+.alert a:hover{
+	color: #f80040;
+	text-decoration: none;
+}
+
 @keyframes change-head-color {
 	from {
 		color: #f1f1f2;
