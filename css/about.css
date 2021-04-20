@@ -39,6 +39,15 @@
 	margin-right: auto;
 }
 
+.rating-container {
+	float: left;
+	width: 40%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .article-content {
 	float: left;
 	width: 55%;
@@ -54,6 +63,34 @@ ul {
 	line-height: 150%
 }
 
+#rating-table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#rating-table td, #rating-table th {
+	border: 1px solid #f2f2f2;
+	padding: 8px;
+}
+
+#rating-table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#rating-table tr:hover {
+	background-color: #f2f2f2;
+}
+
+#rating-table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #150941;
+	color: white;
+	font-size: 16px;
+	font-weight: normal;
+}
+
 @media screen and (max-width: 1080px) {
 	.article-content {
 		width: 100%;
@@ -63,4 +100,29 @@ ul {
 		float: left;
 		width: 100%;
 	}
+	.rating-container {
+		padding: 0px;
+		float: left;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.star-size {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	.star-size {
+		font-size: 5px;
+	}
+}
+
+.checked {
+	color: #f80040;
+}
+
+main {
+	padding-top: 30px;
 }
