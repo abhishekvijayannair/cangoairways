@@ -1,0 +1,76 @@
+/* The grid: Four equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 200px;
+    overflow-y: auto;
+}
+
+/* Style the images inside the grid */
+
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+
+#imgtext {
+    color: #f80040;
+    font-size: 24px;
+    padding: auto;
+    text-align: center;
+}
+
+/* Closable button inside the expanded image */
+
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #f80040;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#expandedImage {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 630px) {
+	#expandedImage {
+		width: 100%;
+        height: 100%;
+	}
+}

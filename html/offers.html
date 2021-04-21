@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Book Flights | CanGo Airways</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css2?family=Crimson+Pro' rel='stylesheet'>
+	<link href='../css/homebanner.css' rel='stylesheet'>
+	<link href='../css/index.css' rel='stylesheet'>
+	<link href='../css/offers.css' rel='stylesheet'>
+	<link href='../css/about.css' rel='stylesheet'>
+	<link href='../css/navbar.css' rel='stylesheet'>
+	<style>
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+			font-family: 'Crimson Pro', serif;
+			background-color: #150941;
+		}
+
+		.heading-text {
+			font-size: 45px;
+		}
+
+		@media screen and (max-width: 550px) {
+			.heading-text {
+				font-size: 35px;
+			}
+
+			.contact-image {
+				width: 90%;
+			}
+		}
+
+		@media screen and (min-width: 2048px) {
+			body {
+				font-size: 24px;
+			}
+		}
+
+		footer {
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #150941;
+			color: #f1f1f2;
+			text-align: center;
+		}
+
+		hr {
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		.core-color {
+			color: #f80040;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Use the header area for the website name or logo -->
+	<header class="hero-image">
+		<div class="hero-text">
+			<h1 class="heading-text">
+				<span class="core-color">CanGo</span> Airways
+			</h1>
+			<p>Travel safely with us</p>
+		</div>
+	</header>
+
+	<!-- Use the nav area to add hyperlinks to other pages within the website -->
+	<nav class="nav-bar" id="nav-bar-id">
+		<a href="../index.html">Home</a>
+		<a href="offers.html">Explore Offers</a>
+		<a href="contact.html" class="active">Contact Us</a>
+		<a href="about.html">About Us</a>
+		<a href="javascript:void(0);" class="icon" onclick="changeActiveNavigationBar()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</nav>
+	<br>
+
+	<!-- Use the main area to add contents within the website -->
+	<main>
+		<section class="article-container">
+			<h2 class="content-head-text">Check Out Offers from Us</h2>
+			<article>
+				<h4>Click on thumbnail to see expanded view</h4>
+				<div class="row">
+					<div class="column">
+						<img src="../images/offer1.png" alt="Clint Daggers 20% Off" style="width:75%"
+							onclick="expandImage(this);">
+					</div>
+					<div class="column">
+						<img src="../images/offer2.png" alt="ABC Apparel Flat 50% Offer" style="width:75%"
+							onclick="expandImage(this);">
+					</div>
+					<div class="column">
+						<img src="../images/offer3.png" alt="Credit Points in XXX Credit Cards" style="width:75%"
+							onclick="expandImage(this);">
+					</div>
+					<div class="column">
+						<img src="../images/offer4.png" alt="Offer from Black Blondes on each ticket" style="width:75%"
+							onclick="expandImage(this);">
+					</div>
+				</div>
+				<br>
+				<hr style="color: #f80040; border: 1px solid #f80040;">
+				<br>
+				<figure class="container">
+					<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+					<img id="expandedImage">
+					<figcaption id="imgtext"></figcaption>
+				</figure>
+			</article>
+		</section>
+
+		<br>
+		<picture>
+			<img class="home-promotion" src="../images/home-promotion.png" alt="Home Promotion" width="1080"
+				height="520">
+		</picture>
+	</main>
+	<br>
+
+	<!-- Use the footer area to add webpage footer content -->
+	<footer>
+		<hr>
+		<p>&copy; Copyright 2021 <span class="core-color">CanGo</span> Airways. All rights reserved.</p>
+		<br>
+	</footer>
+	<script>
+		function changeActiveNavigationBar() {
+			var x = document.getElementById("nav-bar-id");
+			if (x.className === "nav-bar") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav-bar";
+			}
+		}
+
+		function expandImage(image) {
+			var expandImg = document.getElementById("expandedImage");
+			var imgText = document.getElementById("imgtext");
+			expandImg.src = image.src;
+			imgText.innerHTML = image.alt;
+			expandImg.parentElement.style.display = "block";
+		}
+	</script>
+</body>
+
+</html>
