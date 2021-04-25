@@ -8,3 +8,4 @@ Things to Do:
 
 Completed Tasks:
   4. Change the name of navigation bar script function in all required files
+  5. 
