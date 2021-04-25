@@ -7,7 +7,7 @@
 	margin-right: auto;
 }
 
-input[type=text], select, input[type=date],  textarea{
+input[type=text], select, input[type=date], textarea {
 	width: 100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -60,7 +60,7 @@ input[type=submit]:hover {
 	color: #f1f1f2;
 }
 
-.alert a:hover{
+.alert a:hover {
 	color: #f80040;
 	text-decoration: none;
 }
@@ -69,7 +69,6 @@ input[type=submit]:hover {
 	from {
 		color: #f1f1f2;
 	}
-
 	to {
 		color: #f80040;
 	}
