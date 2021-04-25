@@ -88,7 +88,7 @@
     <a href="offers.html">Explore Offers</a>
     <a href="contact.html">Contact Us</a>
     <a href="about.html" class="active">About Us</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="changeActiveNavigationBar()">
       <i class="fa fa-bars"></i>
     </a>
   </nav>
@@ -253,7 +253,7 @@
     <br />
   </footer>
   <script>
-    function myFunction() {
+    function changeActiveNavigationBar() {
       var x = document.getElementById("nav-bar-id");
       if (x.className === "nav-bar") {
         x.className += " responsive";
