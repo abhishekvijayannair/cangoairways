@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Website Created By: Abhishek Vijayan Nair, Amal Thomas, Grace Tshimoa, Jith Koshy, Suchitra Rajrao | 15/04/2021-->
 <html lang="en">
 
 <head>
@@ -24,9 +25,23 @@
       font-size: 45px;
     }
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 600px) {
       .heading-text {
         font-size: 35px;
+      }
+
+      .heading-sub-text {
+        font-size: 10px;
+      }
+    }
+
+    @media screen and (max-height: 600px) {
+      .heading-text {
+        font-size: 35px;
+      }
+
+      .heading-sub-text {
+        display: none;
       }
     }
 
@@ -58,14 +73,14 @@
 
 <body>
   <!-- Use the header area for the website name or logo -->
-	<header class="hero-image">
-		<div class="hero-text">
-			<h1 class="heading-text">
-				<span class="core-color">CanGo</span> Airways
-			</h1>
-			<p>Travel safely with us</p>
-		</div>
-	</header>
+  <header class="hero-image">
+    <div class="hero-text">
+      <h1 class="heading-text">
+        <span class="core-color">CanGo</span> Airways
+      </h1>
+      <h4 class="heading-sub-text">Travel safely with us</h4>
+    </div>
+  </header>
 
   <!-- Use the nav area to add hyperlinks to other pages within the website -->
   <nav class="nav-bar" id="nav-bar-id">
@@ -73,7 +88,7 @@
     <a href="offers.html">Explore Offers</a>
     <a href="contact.html">Contact Us</a>
     <a href="about.html" class="active">About Us</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="changeActiveNavigationBar()">
       <i class="fa fa-bars"></i>
     </a>
   </nav>
@@ -238,7 +253,7 @@
     <br />
   </footer>
   <script>
-    function myFunction() {
+    function changeActiveNavigationBar() {
       var x = document.getElementById("nav-bar-id");
       if (x.className === "nav-bar") {
         x.className += " responsive";

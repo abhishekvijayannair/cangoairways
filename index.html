@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Website Created By:Abhishek Vijayan Nair, Amal Thomas, Grace Tshimoa, Jith Koshy, Suchitra Rajrao | 15/04/2021-->
 <html lang="en">
 
 <head>
@@ -10,12 +11,14 @@
 	<link href='css/homebanner.css' rel='stylesheet'>
 	<link href='css/index.css' rel='stylesheet'>
 	<link href='css/navbar.css' rel='stylesheet'>
+	<link rel="icon" type="image/icon" href="favicon.ico">
 	<style>
 		body,
 		html {
 			height: 100%;
 			margin: 0;
 			font-family: 'Crimson Pro', serif;
+			font-size: 16px;
 			background-color: #150941;
 		}
 
@@ -23,9 +26,23 @@
 			font-size: 45px;
 		}
 
-		@media screen and (max-width: 550px) {
+		@media screen and (max-width: 600px) {
 			.heading-text {
 				font-size: 35px;
+			}
+
+			.heading-sub-text {
+				font-size: 10px;
+			}
+		}
+
+		@media screen and (max-height: 600px) {
+			.heading-text {
+				font-size: 35px;
+			}
+
+			.heading-sub-text {
+				display: none;
 			}
 		}
 
@@ -65,7 +82,7 @@
 			<h1 class="heading-text">
 				<span class="core-color">CanGo</span> Airways
 			</h1>
-			<p>Travel safely with us</p>
+			<h4 class="heading-sub-text">Travel safely with us</h4>
 		</div>
 	</header>
 
@@ -75,7 +92,7 @@
 		<a href="html/offers.html">Explore Offers</a>
 		<a href="html/contact.html">Contact Us</a>
 		<a href="html/about.html">About Us</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<a href="javascript:void(0);" class="icon" onclick="changeActiveNavigationBar()">
 			<i class="fa fa-bars"></i>
 		</a>
 	</nav>
@@ -86,7 +103,7 @@
 		<div class="intro-section">
 			<p>Leisure or business, travelling is always special. CanGo Airways can always help you book flights
 				on your trip. Start planning your journey with just a few clicks.
-				When you book on <span style="color: #f2f2f2;">cangoairways.com</span>,
+				When you book on <span style="color: #f1f1f2;">cangoairways.com</span>,
 				you will have the world right at your fingertips.</p>
 		</div>
 
@@ -152,7 +169,7 @@
 		<br>
 	</footer>
 	<script>
-		function myFunction() {
+		function changeActiveNavigationBar() {
 			var x = document.getElementById("nav-bar-id");
 			if (x.className === "nav-bar") {
 				x.className += " responsive";
