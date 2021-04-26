@@ -1,4 +1,4 @@
-# cangoairways - developement branch
+# cangoairways
 
 Things to Do:
 
